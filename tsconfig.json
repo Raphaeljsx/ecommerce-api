@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src", //Diretório raiz do projeto
+    "outDir": "lib", //Diretório de arquivos gerados
+    "sourceMap": true, // Gerar arquivo de mapeamento de origem para facilitar a depuração
+    "noImplicitAny": true, // Desabilita o uso de any
+    "noImplicitReturns": true, // Desabilita o uso de return implicito
+    "noEmitOnError": true, // Desabilita a emissão de arquivos de saída em caso de erro
+    "strictNullChecks": true, // Desabilita a verificação de tipos nulos
+    "noUnusedLocals": true, // Desabilita a verificação de variáveis locais nulas
+    "incremental": true // Habilita a compilação incremental
+  },
+  "compileOnSave": true, // Compilar automaticamente ao salvar
+  "include": ["src/*"], //Arquivos a serem compilados
+  "exclude": ["**/*.spec.ts"] //Arquivos a serem ignorados
+}
