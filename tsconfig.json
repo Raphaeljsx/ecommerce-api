@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
+    "allowJs": true,
     "rootDir": "src", //Diretório raiz do projeto
     "outDir": "lib", //Diretório de arquivos gerados
     "sourceMap": true, // Gerar arquivo de mapeamento de origem para facilitar a depuração
